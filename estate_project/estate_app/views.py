@@ -17,5 +17,5 @@ def download(request):
     return render(request,'downloads.html')
 
 
-def apointment(request):
+def schedule_inspection(request):
     return render(request,'schedule-inspection.html')
