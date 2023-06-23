@@ -2,7 +2,30 @@
 {% load static %}
 
 <div class="page-content">
-	<div class="sx-bnr-inr overlay-wraper bg-parallax bg-top-center" data-stellar-background-ratio="1">
+
+	<div class="sx-bnr-inr bg-parallax bg-top-center" data-stellar-background-ratio="1" style="background-image: url('/static/wp-content/uploads/2021/06/3-1.jpg'); background-position: 50% 0px;">
+		<div class="container">
+			<div class="sx-bnr-inr-entry">
+				<div class="banner-title-outer">
+					<div class="banner-title-name">
+						<h2 class="m-tb0">About Us</h2>
+						<p>Ace Real Estate is an award-winning and value-driven real estate development company with a tripartite value system that cuts across service delivery and customer satisfaction.</p>
+					</div>
+				</div>
+				<!-- BREADCRUMB ROW -->
+				<div>
+					<ul id="breadcrumbs" class="sx-breadcrumb breadcrumb-style-2">
+						<li class="item-home"><a class="bread-link bread-home" href="../index.html" title="Home">Home</a></li>
+						<li class="item-current item-584"><span class="bread-current bread-584">About Us</span></li>
+					</ul>
+				</div>
+				<!-- BREADCRUMB ROW END -->
+			</div>
+		</div>
+	</div>
+	
+	
+	{% comment %} <div class="sx-bnr-inr overlay-wraper bg-parallax bg-top-center" data-stellar-background-ratio="1">
 		<div class="overlay-main bg-black opacity-07"></div>
 		<div class="container">
 			<div class="sx-bnr-inr-entry">
@@ -24,7 +47,7 @@
 				<!-- BREADCRUMB ROW END -->
 			</div>
 		</div>
-	</div>
+	</div> {% endcomment %}
 	<div data-elementor-type="wp-page" data-elementor-id="584" class="elementor elementor-584">
 		<section data-particle_enable="false" data-particle-mobile-disabled="false"
 			class="elementor-section elementor-top-section elementor-element elementor-element-e4b13e0 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
@@ -44,7 +67,7 @@
 										<div class="row">
 											<div class="col-xl-5 col-lg-5 col-md-12 ">
 												<div class="home-2-about bg-bottom-left bg-no-repeat bg-cover">
-
+													<img src="{% static 'wp-content/uploads/about-us/pic1.jpg' %}" alt="img">
 												</div>
 											</div>
 											<div class="col-xl-7 col-lg-7 col-md-12">
@@ -95,13 +118,13 @@
 								<div class="section-full mobile-page-padding  p-t80 p-b50 overflow-hide">
 									<div class="large-title-block text-center">
 										<!-- TITLE START -->
-										<div class="section-head">
+										{% comment %} <div class="section-head">
 											<div class="sx-separator-outer separator-center">
 												<div class="sx-separator bg-white bg-moving bg-repeat-x">
 													<h3 class="sep-line-one"></h3>
 												</div>
 											</div>
-										</div>
+										</div> {% endcomment %}
 										<!-- TITLE END -->
 									</div>
 									<div class="section-content">
@@ -178,8 +201,7 @@
 											<div class="row number-block-one-outer justify-content-center">
 												<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
 													<div class="number-block-one animate-in-to-top">
-														<img src="../../gridvalley.net/wp/inteshape/wp-content/uploads/2021/06/pic1.html"
-															alt="img">
+														<img src="{% static 'wp-content/uploads/about-us/pic1.jpg' %}" alt="img">
 														<div class="figcaption bg-white text-center p-a20">
 															<h4 class="m-a0">Property Development</h4>
 														</div>
@@ -191,8 +213,7 @@
 												</div>
 												<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
 													<div class="number-block-one animate-in-to-top">
-														<img src="../../gridvalley.net/wp/inteshape/wp-content/uploads/2021/06/pic2.html"
-															alt="img">
+														<img src="{% static 'wp-content/uploads/about-us/pic2.jpg' %}" alt="img">
 														<div class="figcaption bg-white text-center p-a20">
 															<h4 class="m-a0">Refurbishment</h4>
 														</div>
@@ -204,8 +225,7 @@
 												</div>
 												<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
 													<div class="number-block-one animate-in-to-top">
-														<img src="../../gridvalley.net/wp/inteshape/wp-content/uploads/2021/06/pic3.html"
-															alt="img">
+														<img src="{% static 'wp-content/uploads/about-us/pic3.jpg' %}" alt="img">
 														<div class="figcaption bg-white text-center p-a20">
 															<h4 class="m-a0">General Construction</h4>
 														</div>
@@ -362,6 +382,8 @@
 							data-id="353de81" data-element_type="widget"
 							data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}"
 							data-widget_type="team-section.default">
+
+							
 							<div class="elementor-widget-container">
 
 								<div class="section-full p-t80 p-b50 mobile-page-padding">
@@ -396,130 +418,163 @@
 													</div>
 												</div>
 											</div>
+											
+
 											<div class="col-lg-3 col-md-6 col-sm-6 m-b30   ">
 												<div class="our-team-2 ">
 													<div class="profile-image">
+														<img loading="lazy" width="1125" height="1132"
+															src="../wp-content/uploads/2022/10/IMG_6091.jpg"
+															class="attachment-full size-full wp-post-image" alt=""
+															srcset="https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091.jpg 1125w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-298x300.jpg 298w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-1018x1024.jpg 1018w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-150x150.jpg 150w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-768x773.jpg 768w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-600x604.jpg 600w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-100x100.jpg 100w"
+															sizes="(max-width: 1125px) 100vw, 1125px" />
 														<div class="icons">
 														</div>
 													</div>
 													<div class="figcaption text-black">
 														<h4 class="m-t0"><a
-																href="../team/victor-obiekwe/index.html">Victor
-																Obiekwe</a></h4>
-														<span class="m-b0">Head of Operations</span>
+																href="../team/ayobami-akindipe/index.html">Ayobami
+																Akindipe</a></h4>
+														<span class="m-b0">CEO</span>
 													</div>
 												</div>
 											</div>
+
 											<div class="col-lg-3 col-md-6 col-sm-6 m-b30   ">
 												<div class="our-team-2 ">
 													<div class="profile-image">
-														<div class="icons">
-														</div>
-													</div>
-													<div class="figcaption text-black">
-														<h4 class="m-t0"><a href="../team/moira-emina/index.html">Moira
-																Emina</a></h4>
-														<span class="m-b0">Head of Marketing and Communications</span>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-6 col-sm-6 m-b30   ">
-												<div class="our-team-2 ">
-													<div class="profile-image">
-														<div class="icons">
-														</div>
-													</div>
-													<div class="figcaption text-black">
-														<h4 class="m-t0"><a href="../team/ime-udo/index.html">Ime
-																Udo</a></h4>
-														<span class="m-b0">Legal Officer</span>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-6 col-sm-6 m-b30   ">
-												<div class="our-team-2 ">
-													<div class="profile-image">
+														<img loading="lazy" width="1125" height="1132"
+															src="../wp-content/uploads/2022/10/IMG_6091.jpg"
+															class="attachment-full size-full wp-post-image" alt=""
+															srcset="https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091.jpg 1125w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-298x300.jpg 298w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-1018x1024.jpg 1018w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-150x150.jpg 150w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-768x773.jpg 768w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-600x604.jpg 600w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-100x100.jpg 100w"
+															sizes="(max-width: 1125px) 100vw, 1125px" />
 														<div class="icons">
 														</div>
 													</div>
 													<div class="figcaption text-black">
 														<h4 class="m-t0"><a
-																href="../team/shamar-jordans/index.html">Shamar
-																Jordans</a></h4>
-														<span class="m-b0">Customer Experience</span>
+																href="../team/ayobami-akindipe/index.html">Ayobami
+																Akindipe</a></h4>
+														<span class="m-b0">CEO</span>
 													</div>
 												</div>
 											</div>
+
 											<div class="col-lg-3 col-md-6 col-sm-6 m-b30   ">
 												<div class="our-team-2 ">
 													<div class="profile-image">
+														<img loading="lazy" width="1125" height="1132"
+															src="../wp-content/uploads/2022/10/IMG_6091.jpg"
+															class="attachment-full size-full wp-post-image" alt=""
+															srcset="https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091.jpg 1125w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-298x300.jpg 298w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-1018x1024.jpg 1018w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-150x150.jpg 150w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-768x773.jpg 768w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-600x604.jpg 600w, https://acerealestates.ng/wp-content/uploads/2022/10/IMG_6091-100x100.jpg 100w"
+															sizes="(max-width: 1125px) 100vw, 1125px" />
 														<div class="icons">
 														</div>
 													</div>
 													<div class="figcaption text-black">
 														<h4 class="m-t0"><a
-																href="../team/joseph-adukwu/index.html">Joseph
-																Adukwu</a></h4>
-														<span class="m-b0">Media Team </span>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-6 col-sm-6 m-b30   ">
-												<div class="our-team-2 ">
-													<div class="profile-image">
-														<div class="icons">
-														</div>
-													</div>
-													<div class="figcaption text-black">
-														<h4 class="m-t0"><a href="../team/dumebi-egbo/index.html">Dumebi
-																Egbo</a></h4>
-														<span class="m-b0">Media Team</span>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-6 col-sm-6 m-b30   ">
-												<div class="our-team-2 ">
-													<div class="profile-image">
-														<div class="icons">
-														</div>
-													</div>
-													<div class="figcaption text-black">
-														<h4 class="m-t0"><a
-																href="../team/olasiede-taiwo/index.html">Olasiede
-																Taiwo</a></h4>
-														<span class="m-b0">Surveyor </span>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-6 col-sm-6 m-b30   ">
-												<div class="our-team-2 ">
-													<div class="profile-image">
-														<div class="icons">
-														</div>
-													</div>
-													<div class="figcaption text-black">
-														<h4 class="m-t0"><a
-																href="../team/rasheedah-umar/index.html">Rasheedah
-																Umar</a></h4>
-														<span class="m-b0">Office Assistant </span>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-6 col-sm-6 m-b30   ">
-												<div class="our-team-2 ">
-													<div class="profile-image">
-														<div class="icons">
-														</div>
-													</div>
-													<div class="figcaption text-black">
-														<h4 class="m-t0"><a
-																href="../team/joseph-otonko/index.html">Joseph
-																Otonko</a></h4>
-														<span class="m-b0">Head Logistics</span>
+																href="../team/ayobami-akindipe/index.html">Ayobami
+																Akindipe</a></h4>
+														<span class="m-b0">CEO</span>
 													</div>
 												</div>
 											</div>
 										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-598b8d2 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementskit-parallax-multi-container" data-id="598b8d2" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f1e1b0a" data-id="f1e1b0a" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6d260e1 elementor-widget elementor-widget-services-section" data-id="6d260e1" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="services-section.default">
+							<div class="elementor-widget-container">
+
+								<!-- OUR SERVICES START -->
+								<div class="section-full mobile-page-padding p-t80  p-b50">
+									<div class="section-content">
+										<div class="container">
+											<!-- TITLE START -->
+											<div class="section-head">
+												<div class="sx-separator-outer separator-left">
+													<div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-position: -2560px 0px;">
+														<h3 class="sep-line-one ">Testimonials</h3>
+													</div>
+												</div>
+											</div>
+											<!-- TITLE END -->
+											<div class="row">
+												<!-- Block one -->
+												<div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+													<div class="sx-icon-box-wraper  icon-count-2-outer">
+														<div class="icon-count-2 bg-white">
+															<span class="icon-count-number">01</span>
+															<div class="icon-xl inline-icon m-b5 scale-in-center">
+																<span class="icon-cell"> <img src="../static/wp-content/uploads/2022/10/Ayobami-Akindipe-450x400.jpg" alt=""> </i></span>
+															</div>
+															<div class="icon-content">
+																<h4 class="sx-tilte">Partnership</h4>
+																<p>We adopt your own goals as our own: Your success is
+																	our success. </p>
+																<div class="text-left">
+																	<a href="../services/partnership/index.html" class="site-button-link">Read More</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- Block one -->
+												<div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+													<div class="sx-icon-box-wraper  icon-count-2-outer">
+														<div class="icon-count-2 bg-white">
+															<span class="icon-count-number">02</span>
+															<div class="icon-xl inline-icon m-b5 scale-in-center">
+																<span class="icon-cell"><img src="../static/wp-content/uploads/2022/10/Ayobami-Akindipe-450x400.jpg" alt=""></i></span>
+															</div>
+															<div class="icon-content">
+																<h4 class="sx-tilte">Integrity</h4>
+																<p>We operate with the highest level of honesty,
+																	professionalism and integrity at all times. </p>
+																<div class="text-left">
+																	<a href="../services/integrity/index.html" class="site-button-link">Read More</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- Block one -->
+												<div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+													<div class="sx-icon-box-wraper  icon-count-2-outer">
+														<div class="icon-count-2 bg-white">
+															<span class="icon-count-number">03</span>
+															<div class="icon-xl inline-icon m-b5 scale-in-center">
+																<span class="icon-cell"><img src="../static/wp-content/uploads/2022/10/WhatsApp-Image-2022-10-07-at-8.32.31-AM.jpg" alt=""></i></span>
+															</div>
+															<div class="icon-content">
+																<h4 class="sx-tilte">Excellence</h4>
+																<p>We strive for excellence and aim to provide the
+																	highest level of service possible. </p>
+																<!-- <div class="text-left">
+																	<a href="../services/excellence/index.html" class="site-button-link">Read More</a>
+																</div> -->
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="hilite-title text-left p-l50 text-uppercase">
+										<strong></strong>
 									</div>
 								</div>
 							</div>
@@ -528,7 +583,7 @@
 				</div>
 			</div>
 		</section>
-		<section data-particle_enable="false" data-particle-mobile-disabled="false"
+		{% comment %} <section data-particle_enable="false" data-particle-mobile-disabled="false"
 			class="elementor-section elementor-top-section elementor-element elementor-element-1cc4d90 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
 			data-id="1cc4d90" data-element_type="section"
 			data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
@@ -560,12 +615,12 @@
 												<div class="testimonial-detail clearfix">
 													<div class="testimonial-pic shadow scale-in-center">
 														<img loading="lazy"
-															src="../wp-content/uploads/2022/10/WhatsApp-Image-2022-10-07-at-11.55.13-AM.jpg"
+															src="../static/wp-content/uploads/2022/10/WhatsApp-Image-2022-10-07-at-11.55.13-AM.jpg"
 															width="100" height="100" alt="img">
 													</div>
 													<h4 class="testimonial-name">Caleb Shittu</h4>
 													<span class="testimonial-position"></span>
-													<span class="fa fa-quote-right"></span>
+													
 												</div>
 												<div class="testimonial-text bg-white  shadow-sm">
 													<p></p>
@@ -579,130 +634,8 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<section data-particle_enable="false" data-particle-mobile-disabled="false"
-			class="elementor-section elementor-top-section elementor-element elementor-element-1657eb3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-			data-id="1657eb3" data-element_type="section"
-			data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
-			<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5da235a"
-					data-id="5da235a" data-element_type="column">
-					<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-b28e46b elementor-widget elementor-widget-heading"
-							data-id="b28e46b" data-element_type="widget"
-							data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}"
-							data-widget_type="heading.default">
-							<div class="elementor-widget-container">
-								<h5 class="elementor-heading-title elementor-size-default">As Seen On</h5>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section data-particle_enable="false" data-particle-mobile-disabled="false"
-			class="elementor-section elementor-top-section elementor-element elementor-element-42d27c6 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-			data-id="42d27c6" data-element_type="section"
-			data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
-			<div class="elementor-container elementor-column-gap-default">
-				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-a55b4a7"
-					data-id="a55b4a7" data-element_type="column">
-					<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-f2e3ffd elementor-widget elementor-widget-image"
-							data-id="f2e3ffd" data-element_type="widget"
-							data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}"
-							data-widget_type="image.default">
-							<div class="elementor-widget-container">
-								<img width="483" height="104" src="../wp-content/uploads/2022/10/index.png"
-									class="attachment-large size-large" alt="" loading="lazy"
-									srcset="https://acerealestates.ng/wp-content/uploads/2022/10/index.png 483w, https://acerealestates.ng/wp-content/uploads/2022/10/index-300x65.png 300w"
-									sizes="(max-width: 483px) 100vw, 483px" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-602c456"
-					data-id="602c456" data-element_type="column">
-					<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-8d1e7ff elementor-widget elementor-widget-image"
-							data-id="8d1e7ff" data-element_type="widget"
-							data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}"
-							data-widget_type="image.default">
-							<div class="elementor-widget-container">
-								<img width="376" height="60" src="../wp-content/uploads/2022/10/guardian-conscience.png"
-									class="attachment-large size-large" alt="" loading="lazy"
-									srcset="https://acerealestates.ng/wp-content/uploads/2022/10/guardian-conscience.png 376w, https://acerealestates.ng/wp-content/uploads/2022/10/guardian-conscience-300x48.png 300w"
-									sizes="(max-width: 376px) 100vw, 376px" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-8ca2309"
-					data-id="8ca2309" data-element_type="column">
-					<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-7efe325 elementor-widget elementor-widget-image"
-							data-id="7efe325" data-element_type="widget"
-							data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}"
-							data-widget_type="image.default">
-							<div class="elementor-widget-container">
-								<img width="580" height="121"
-									src="../wp-content/uploads/2022/10/BusinessdayLogo-700x146-1.webp"
-									class="attachment-large size-large" alt="" loading="lazy"
-									srcset="https://acerealestates.ng/wp-content/uploads/2022/10/BusinessdayLogo-700x146-1.webp 700w, https://acerealestates.ng/wp-content/uploads/2022/10/BusinessdayLogo-700x146-1-300x63.webp 300w, https://acerealestates.ng/wp-content/uploads/2022/10/BusinessdayLogo-700x146-1-600x125.webp 600w"
-									sizes="(max-width: 580px) 100vw, 580px" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-7b1677c"
-					data-id="7b1677c" data-element_type="column">
-					<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-98cfea2 elementor-widget elementor-widget-image"
-							data-id="98cfea2" data-element_type="widget"
-							data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}"
-							data-widget_type="image.default">
-							<div class="elementor-widget-container">
-								<img width="512" height="94" src="../wp-content/uploads/2022/10/newlogonation.webp"
-									class="attachment-large size-large" alt="" loading="lazy"
-									srcset="https://acerealestates.ng/wp-content/uploads/2022/10/newlogonation.webp 512w, https://acerealestates.ng/wp-content/uploads/2022/10/newlogonation-300x55.webp 300w"
-									sizes="(max-width: 512px) 100vw, 512px" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-b1cfd83"
-					data-id="b1cfd83" data-element_type="column">
-					<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-e7638e6 elementor-widget elementor-widget-image"
-							data-id="e7638e6" data-element_type="widget"
-							data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}"
-							data-widget_type="image.default">
-							<div class="elementor-widget-container">
-								<img width="545" height="121"
-									src="../wp-content/uploads/2022/10/f15e7f8e-this-day-live-logo.png"
-									class="attachment-large size-large" alt="" loading="lazy"
-									srcset="https://acerealestates.ng/wp-content/uploads/2022/10/f15e7f8e-this-day-live-logo.png 545w, https://acerealestates.ng/wp-content/uploads/2022/10/f15e7f8e-this-day-live-logo-300x67.png 300w"
-									sizes="(max-width: 545px) 100vw, 545px" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-2520c06"
-					data-id="2520c06" data-element_type="column">
-					<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-f5c368e elementor-widget elementor-widget-image"
-							data-id="f5c368e" data-element_type="widget"
-							data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}"
-							data-widget_type="image.default">
-							<div class="elementor-widget-container">
-								<img width="133" height="49" src="../wp-content/uploads/2022/10/punch-logo-2.webp"
-									class="attachment-medium size-medium" alt="" loading="lazy" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		</section> {% endcomment %}
+		
 	</div>
 </div>
 
