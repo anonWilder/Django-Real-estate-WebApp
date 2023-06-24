@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-shp7+mj-nwil(h_a4=wvcc_koge@_p*m80l)&i5fpsd4-3rv)m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOST = []
 ALLOWED_HOSTS = ['realestateweb.up.railway.app', '*']
