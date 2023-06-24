@@ -19,3 +19,6 @@ def download(request):
 
 def schedule_inspection(request):
     return render(request,'schedule-inspection.html')
+
+def our_projects(request):
+    return render(request,'our-projects.html')
