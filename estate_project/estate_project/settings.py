@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-shp7+mj-nwil(h_a4=wvcc_koge@_p*m80l)&i5fpsd4-3rv)m
 DEBUG = False
 
 ALLOWED_HOST = []
-ALLOWED_HOSTS = ['realestateweb.up.railway.app', '*']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
