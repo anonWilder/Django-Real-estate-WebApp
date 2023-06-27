@@ -512,7 +512,7 @@
 															<div class="overlay-main bg-black opacity-04"></div>
 															<div class="video-section-inner">
 																<div class="video-section-content">
-																	<a href="https://www.youtube.com/watch?v=1bvNBm4vCGs"
+																	<a href="#"
 																		class="mfp-video play-now">
 																		<i class="icon fa fa-play"></i>
 																		<span class="ripple"></span>
@@ -550,9 +550,7 @@
 									data-id="16ff75d" data-element_type="widget"
 									data-settings='{"ekit_we_effect_on":"none"}' data-widget_type="what-we-do.default">
 									<div class="elementor-widget-container">
-										<div
-											class="what-we-do section-full mobile-page-padding p-t80 p-b30 bg-repeat overflow-hide">
-											<div class="container right-half-bg-image-outer">
+										<div class="container right-half-bg-image-outer">
 												<div class="right-half-bg-image bg-parallax bg-fixed bg-top-right"
 													data-stellar-background-ratio="0"></div>
 												<!-- TITLE START -->
@@ -610,20 +608,12 @@
 														<div class="row">
 															<div class="col-lg-6 col-md-12 col-sm-12">
 																<div class="large-title">
-																	<h3 class="m-tb0">
-																		We present the idea with impressive details.
-																	</h3>
+																	<h3 class="m-tb0">Lorem ipsum dolor sit amet.</h3>
 																</div>
 															</div>
 															<div class="col-lg-6 col-md-12 col-sm-12">
 																<div class="large-title-info">
-																	<p>
-																		Zaran Real Estate is an award winning and
-																		value driven real estate development company
-																		with a tripartite value system that cut
-																		across service delivery, and customer
-																		satisfaction.
-																	</p>
+																	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit maxime nam eaque consectetur libero temporibus sed hic, nesciunt qui voluptates.</p>
 																	<div class="text-left">
 																		<a href="#" class="site-button-link"></a>
 																	</div>
@@ -633,7 +623,6 @@
 													</div>
 												</div>
 											</div>
-										</div>
 									</div>
 								</div>
 							</div>
@@ -1108,7 +1097,7 @@
 													<div class="section-head">
 														<div class="sx-separator-outer separator-left">
 															<div class="sx-separator bg-white bg-moving bg-repeat-x">
-																<h3 class="sep-line-one">Our Core Values</h3>
+																<h3 class="sep-line-one">What We Stand By</h3>
 															</div>
 														</div>
 													</div>
@@ -1125,12 +1114,8 @@
 																				class="flaticon-door"></i></span>
 																	</div>
 																	<div class="icon-content">
-																		<h4 class="sx-tilte">Integrity</h4>
-																		<p>
-																			We operate with the highest level of
-																			honesty, professionalism and integrity at
-																			all times.
-																		</p>
+																		<h4 class="sx-tilte">Lorem ipsum</h4>
+																		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, iure!</p>
 																		<div class="text-left">
 																			<a href="services/integrity/index.html"
 																				class="site-button-link">Read More</a>
@@ -1150,11 +1135,8 @@
 																				class="flaticon-window"></i></span>
 																	</div>
 																	<div class="icon-content">
-																		<h4 class="sx-tilte">Partnership</h4>
-																		<p>
-																			We adopt your own goals as our own: Your
-																			success is our success.
-																		</p>
+																		<h4 class="sx-tilte">Lorem ipsum</h4>
+																		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, culpa.</p>
 																		<div class="text-left">
 																			<a href="services/partnership/index.html"
 																				class="site-button-link">Read More</a>
@@ -1174,12 +1156,8 @@
 																				class="flaticon-skyline"></i></span>
 																	</div>
 																	<div class="icon-content">
-																		<h4 class="sx-tilte">Excellence</h4>
-																		<p>
-																			We strive for excellence and aim to
-																			provide the highest level of service
-																			possible.
-																		</p>
+																		<h4 class="sx-tilte">Lorem Ipsum</h4>
+																		<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, odio.</p>
 																		<div class="text-left">
 																			<a href="services/excellence/index.html"
 																				class="site-button-link">Read More</a>
@@ -1221,17 +1199,14 @@
 						</div>
 					</div>
 				</section>
-				<section data-particle_enable="false" data-particle-mobile-disabled="false"
-					class="elementor-section elementor-top-section elementor-element elementor-element-d3cc353 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-					data-id="d3cc353" data-element_type="section" data-settings='{"ekit_has_onepagescroll_dot":"yes"}' style="background-color: #333333;">
+				
+
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d3cc353 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d3cc353" data-element_type="section" data-settings='{"ekit_has_onepagescroll_dot":"yes"}' style="background-color: #333333;">
 					<div class="elementor-container elementor-column-gap-default">
-						<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-079e2cb"
-							data-id="079e2cb" data-element_type="column">
+						{% for video_blog in video_blogs %}
+						<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-{{ forloop.counter }}" data-id="{{ forloop.counter }}" data-element_type="column">
 							<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-b04282a elementor-aspect-ratio-169 elementor-widget elementor-widget-video"
-									data-id="b04282a" data-element_type="widget"
-									data-settings='{"youtube_url":"https:\/\/www.youtube.com\/watch?v=ID4VxXirZuY","video_type":"youtube","controls":"yes","aspect_ratio":"169","ekit_we_effect_on":"none"}'
-									data-widget_type="video.default">
+								<div class="elementor-element elementor-element-{{ forloop.counter }} elementor-aspect-ratio-169 elementor-widget elementor-widget-video" data-id="{{ forloop.counter }}" data-element_type="widget" data-settings='{"youtube_url":"{{ video_blog.youtube_url }}","video_type":"youtube","controls":"yes","aspect_ratio":"169","ekit_we_effect_on":"none"}' data-widget_type="video.default">
 									<div class="elementor-widget-container">
 										<div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
 											<div class="elementor-video"></div>
@@ -1240,38 +1215,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-0e8dee8"
-							data-id="0e8dee8" data-element_type="column">
-							<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-4cc5c3c elementor-aspect-ratio-169 elementor-widget elementor-widget-video"
-									data-id="4cc5c3c" data-element_type="widget"
-									data-settings='{"youtube_url":"https:\/\/www.youtube.com\/watch?v=v_Ynr1pVfaw","video_type":"youtube","controls":"yes","aspect_ratio":"169","ekit_we_effect_on":"none"}'
-									data-widget_type="video.default">
-									<div class="elementor-widget-container">
-										<div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
-											<div class="elementor-video"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-4c0835f"
-							data-id="4c0835f" data-element_type="column">
-							<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-59444d0 elementor-aspect-ratio-169 elementor-widget elementor-widget-video"
-									data-id="59444d0" data-element_type="widget"
-									data-settings='{"youtube_url":"https:\/\/www.youtube.com\/watch?v=7yMGluEeRDo","video_type":"youtube","controls":"yes","aspect_ratio":"169","ekit_we_effect_on":"none"}'
-									data-widget_type="video.default">
-									<div class="elementor-widget-container">
-										<div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
-											<div class="elementor-video"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						{% endfor %}
 					</div>
 				</section>
+				
 
 
 				<section data-particle_enable="false" data-particle-mobile-disabled="false"
@@ -1327,149 +1274,71 @@
 												</div>
 												<!-- TITLE END -->
 
-												
+
 												<!-- IMAGE CAROUSEL START -->
 												<div class="section-content">
 													<div class="row">
-														<div class="col-lg-6 col-md-12 col-sm-12">
-															<!-- COLUMNS 2 -->
-															<div class="blog-post blog-lg date-style-3 block-shadow">
-																<div class="sx-post-info bg-white">
-																	<div class="sx-post-meta">
-																		<ul>
-																			<li class="post-date">
-																				<strong>23</strong>
-																				<span>Jan</span>
-																			</li>
-																			<li class="post-author">
-																				By
-																				<span><a href="index.html"
-																						title="Visit ACE&#8217;s website"
-																						rel="author external">ACE</a></span>
-																			</li>
-																			<li class="post-comment">2 Comments</li>
-																		</ul>
-																	</div>
-																	<div class="sx-post-title">
-																		<h4 class="post-title">
-																			<a href="alara-of-ilara/index.html">ALARA OF
-																				ILARA</a>
-																		</h4>
-																	</div>
-
-																	<div class="sx-post-text">
-																		<p>
-																			Alara of Ilara An old adage says that the
-																			quality of a man is not measured by the
-																			amount of his wealth, but by his general
-																			behavior which also goes along that not
-																			the size of or population of a town that
-																			could endowed its culture heritage that
-																			which had been originally glorified by
-																			nature. [&hellip;]
-																		</p>
-																	</div>
-																	<div class="clearfix">
-																		<div class="sx-post-readmore pull-left">
-																			<a href="alara-of-ilara/index.html"
-																				title="Read More" rel="bookmark"
-																				class="site-button-link">Read More</a>
-																		</div>
-																		<div class="widget_social_inks pull-right">
-																			<ul
-																				class="social-icons social-md social-square social-dark m-b0">
-																				<li>
-																					<a href="http://www.facebook.com/share.php?u=https://acerealestates.ng/alara-of-ilara/"
-																						class="fa fa-facebook"></a>
-																				</li>
-																				<li>
-																					<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://acerealestates.ng/alara-of-ilara/"
-																						class="fa fa-linkedin"></a>
-																				</li>
-																				<li>
-																					<a href="http://pinterest.com/pin/create/button/?url=https://acerealestates.ng/alara-of-ilara/"
-																						class="fa fa-pinterest"></a>
-																				</li>
-																				<li>
-																					<a href="http://twitter.com/home?status=https://acerealestates.ng/alara-of-ilara/"
-																						class="fa fa-twitter"></a>
-																				</li>
-																			</ul>
+													
+														<div class="section-content">
+															<div class="row">
+																{% for post in posts %}
+																<div class="col-lg-6 col-md-12 col-sm-12">
+																	<div class="blog-post blog-lg date-style-3 block-shadow">
+																		<div class="sx-post-info bg-white">
+																			<div class="sx-post-meta">
+																				<ul>
+																					<li class="post-date">
+																						<strong>{{ post.date.day }}</strong>
+																						<span>{{ post.date|date:"M" }}</span>
+																					</li>
+																					<li class="post-author">
+																						By
+																						<span><a href="index.html" title="Visit ACE's website" rel="author external">{{ post.author }}</a></span>
+																					</li>
+																					<li class="post-comment">{{ post.comments }} Comments</li>
+																				</ul>
+																			</div>
+																			<div class="sx-post-title">
+																				<h4 class="post-title">
+																					<a href="alara-of-ilara/index.html">{{ post.title }}</a>
+																				</h4>
+																			</div>
+														
+																			<div class="sx-post-text">
+																				<p>
+																					{{ post.content }}
+																				</p>
+																			</div>
+																			<div class="clearfix">
+																				<div class="sx-post-readmore pull-left">
+																					<a href="alara-of-ilara/index.html" title="Read More" rel="bookmark" class="site-button-link">Read More</a>
+																				</div>
+																				<div class="widget_social_inks pull-right">
+																					<ul class="social-icons social-md social-square social-dark m-b0">
+																						<li>
+																							<a href="http://www.facebook.com/share.php?u=https://acerealestates.ng/alara-of-ilara/" class="fa fa-facebook"></a>
+																						</li>
+																						<li>
+																							<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://acerealestates.ng/alara-of-ilara/" class="fa fa-linkedin"></a>
+																						</li>
+																						<li>
+																							<a href="http://pinterest.com/pin/create/button/?url=https://acerealestates.ng/alara-of-ilara/" class="fa fa-pinterest"></a>
+																						</li>
+																						<li>
+																							<a href="http://twitter.com/home?status=https://acerealestates.ng/alara-of-ilara/" class="fa fa-twitter"></a>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
 																		</div>
 																	</div>
 																</div>
+																{% endfor %}
 															</div>
 														</div>
+														
 
-														<div class="col-lg-6 col-md-12 col-sm-12">
-															<!-- COLUMNS 2 -->
-															<div class="blog-post blog-lg date-style-3 block-shadow">
-																<div class="sx-post-info bg-white">
-																	<div class="sx-post-meta">
-																		<ul>
-																			<li class="post-date">
-																				<strong>23</strong>
-																				<span>Jan</span>
-																			</li>
-																			<li class="post-author">
-																				By
-																				<span><a href="index.html"
-																						title="Visit ACE&#8217;s website"
-																						rel="author external">ACE</a></span>
-																			</li>
-																			<li class="post-comment">2 Comments</li>
-																		</ul>
-																	</div>
-																	<div class="sx-post-title">
-																		<h4 class="post-title">
-																			<a href="alara-of-ilara/index.html">ALARA OF
-																				ILARA</a>
-																		</h4>
-																	</div>
-
-																	<div class="sx-post-text">
-																		<p>
-																			Alara of Ilara An old adage says that the
-																			quality of a man is not measured by the
-																			amount of his wealth, but by his general
-																			behavior which also goes along that not
-																			the size of or population of a town that
-																			could endowed its culture heritage that
-																			which had been originally glorified by
-																			nature. [&hellip;]
-																		</p>
-																	</div>
-																	<div class="clearfix">
-																		<div class="sx-post-readmore pull-left">
-																			<a href="alara-of-ilara/index.html"
-																				title="Read More" rel="bookmark"
-																				class="site-button-link">Read More</a>
-																		</div>
-																		<div class="widget_social_inks pull-right">
-																			<ul
-																				class="social-icons social-md social-square social-dark m-b0">
-																				<li>
-																					<a href="http://www.facebook.com/share.php?u=https://acerealestates.ng/alara-of-ilara/"
-																						class="fa fa-facebook"></a>
-																				</li>
-																				<li>
-																					<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://acerealestates.ng/alara-of-ilara/"
-																						class="fa fa-linkedin"></a>
-																				</li>
-																				<li>
-																					<a href="http://pinterest.com/pin/create/button/?url=https://acerealestates.ng/alara-of-ilara/"
-																						class="fa fa-pinterest"></a>
-																				</li>
-																				<li>
-																					<a href="http://twitter.com/home?status=https://acerealestates.ng/alara-of-ilara/"
-																						class="fa fa-twitter"></a>
-																				</li>
-																			</ul>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
+														
 													</div>
 												</div>
 											</div>
