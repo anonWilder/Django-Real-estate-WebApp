@@ -2,7 +2,7 @@
 {% load static %}
 
 <div class="page-content">
-	<div class="sx-bnr-inr bg-parallax bg-top-center" data-stellar-background-ratio="1" style="background-image: url('/static/wp-content/uploads/2021/06/5-1.jpg'); background-position: 50% 0px;">
+	<div class="sx-bnr-inr bg-parallax bg-top-center" data-stellar-background-ratio="1" style="background-image: url('{% static 'wp-content/uploads/zeranimg/projects/landscape03.jpg' %}'); background-position: 50% 0px;">
 		<div class="container">
 			<div class="sx-bnr-inr-entry">
 				<div class="banner-title-outer">
@@ -44,10 +44,10 @@
 											<h2 class="ekit-heading--title elementskit-section-title ">
 												Lagos Estates
 											</h2>
-											<div
+											{% comment %} <div
 												class="ekit_heading_separetor_wraper ekit_heading_elementskit-border-divider">
 												<div class="elementskit-border-divider"></div>
-											</div>
+											</div> {% endcomment %}
 										</div>
 										<div class='ekit-heading__content-wrapper'>
 										</div>
