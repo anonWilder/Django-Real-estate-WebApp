@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Inteshape
+Adding Responsive styles. 
+*/
+@media only screen and ( max-width:770px) {
+	.logged-in.admin-bar .nav-transparent .is-fixed.color-fill .main-bar {
+		margin-top: 45px;
+	}
+}
+@media only screen and ( max-width:720px) {
+	.section-head h1:after,
+	.section-head h2:after,
+	.section-head h3:after {
+		display: none;
+	}
+	.wt-tabs.vertical .nav-tabs {
+		width: 100%;
+		float: none;
+		border-right: 0px;
+	}
+	.wt-tabs.vertical .tab-content {
+		width: 100%;
+		margin-left: 0px !important;
+	}
+	
+	.ow-client-logo {
+		margin: 0px 1px;
+	}
+	
+	img.alignright {
+		margin: 25px 0 0px 25px;
+	}
+	
+	.comment-list li.comment .comment-body {
+		position: relative;
+		padding: 30px;
+	}
+	.comment-list li.comment {
+		position: relative;
+		margin-top: 28px;
+		float: left;
+		width: 100%;
+	}
+	
+	.comment-list .comment-author.vcard {
+		position: relative;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	
+	.comment-list .comment-body .comment-meta-n-description {
+		display: inline-block;
+		padding: 0;
+		width: 100%;
+	}
+	
+	.comment-meta-n-description h4, 
+	.comment-meta-n-description p,
+	.comment-meta-n-description .reply{
+		text-align:center;
+	}
+	
+	.comment-list .comment-body .comment-meta-n-description .media-heading {
+		float: none;
+	}
+	
+	.comment-list .comment-body .comment-meta-n-description .comment-reply-link {
+		float: none;
+	}
+	
+	.comment-list li.comment .children {
+		padding-left: 0;
+		margin-left: 0;
+	}
+	
+	blockquote {
+		padding: 30px 30px 10px 30px;
+	}
+	
+	ol.comment-list li .comment-meta, ol.comment-list li.comment .comment-meta {
+		margin-bottom: 15px;
+	   
+	}
+	
+	blockquote:before {
+		content: "\f10d";
+		font-size: 25px;
+		top: 10px;
+		left: 10px;
+	}
+	ul,ol {
+		list-style-position: inside;
+	}
+	.sx-bnr-inr {
+		height: 350px;
+	}
+	
+	.logged-in.admin-bar .nav-transparent .is-fixed.color-fill .main-bar {
+		margin-top: 0;
+	}
+}

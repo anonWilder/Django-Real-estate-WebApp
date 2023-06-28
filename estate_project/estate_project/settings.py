@@ -14,7 +14,14 @@ SECRET_KEY = 'django-insecure-shp7+mj-nwil(h_a4=wvcc_koge@_p*m80l)&i5fpsd4-3rv)m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = [
+    'zaranrealestate.up.railway.app',
+    '*'
+    # Add any other allowed hosts here
+]
+
 
 
 # Application definition
