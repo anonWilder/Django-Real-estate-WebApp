@@ -16,7 +16,7 @@ DEBUG = True
 
 #ALLOWED_HOST = []
 
-ALLOWED_HOST = ['zaranrealestate.up.railway.app', '*']
+ALLOWED_HOSTS = ['zaranrealestate.up.railway.app', '*']
 
 
 
