@@ -16,10 +16,7 @@ DEBUG = True
 
 #ALLOWED_HOST = []
 
-ALLOWED_HOSTS = [
-    'zaranrealestate.up.railway.app',
-    # Add any other allowed hosts here
-]
+ALLOWED_HOST = ['zaranrealestate.up.railway.app', '*']
 
 
 
