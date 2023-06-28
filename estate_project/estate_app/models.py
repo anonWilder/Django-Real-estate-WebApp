@@ -2,8 +2,6 @@ from django.db import models
 
 # Create your models here.
 
-from django.db import models
-
 class BlogPost(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField()
@@ -14,9 +12,6 @@ class BlogPost(models.Model):
     def __str__(self):
         return self.title
 
-
-from django.db import models
-
 class VideoBlog(models.Model):
     youtube_url = models.URLField()
 
@@ -24,3 +19,18 @@ class VideoBlog(models.Model):
 
     def __str__(self):
         return self.youtube_url
+
+class NumberBlock(models.Model):
+    image = models.ImageField(upload_to='number_blocks')
+    title = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.title
+
+class Project(models.Model):
+    title = models.CharField(max_length=100)
+    image = models.ImageField(upload_to='project_images/')
+    description = models.TextField()
+
+    def __str__(self):
+        return self.title

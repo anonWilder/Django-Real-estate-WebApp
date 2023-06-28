@@ -564,46 +564,21 @@
 												<!-- TITLE END -->
 												<div class="section-content">
 													<div class="row number-block-one-outer justify-content-center">
+														{% for number_block in number_blocks %}
 														<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
 															<div class="number-block-one animate-in-to-top">
-																<img src="{% static 'wp-content/uploads/zeranimg/whatwedo/portrait01.jpg' %}"
-																	alt="img" />
+																<img src="{{ number_block.image.url }}" alt="img" />
 																<div class="figcaption bg-white text-center p-a20">
-																	<h4 class="m-a0">Property Development</h4>
+																	<h4 class="m-a0">{{ number_block.title }}</h4>
 																</div>
-																<div
-																	class="figcaption-number text-center sx-text-primary animate-in-to-top-content">
-																	<span>01</span>
+																<div class="figcaption-number text-center sx-text-primary animate-in-to-top-content">
+																	<span>{{ forloop.counter }}</span>
 																</div>
 															</div>
 														</div>
-														<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
-															<div class="number-block-one animate-in-to-top">
-																<img src="{% static 'wp-content/uploads/zeranimg/whatwedo/portrait02.jpg' %}"
-																	alt="img" />
-																<div class="figcaption bg-white text-center p-a20">
-																	<h4 class="m-a0">Refurbishment</h4>
-																</div>
-																<div
-																	class="figcaption-number text-center sx-text-primary animate-in-to-top-content">
-																	<span>02</span>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
-															<div class="number-block-one animate-in-to-top">
-																<img src="{% static 'wp-content/uploads/zeranimg/whatwedo/portrait03.jpg' %}"
-																	alt="img" />
-																<div class="figcaption bg-white text-center p-a20">
-																	<h4 class="m-a0">General Construction</h4>
-																</div>
-																<div
-																	class="figcaption-number text-center sx-text-primary animate-in-to-top-content">
-																	<span>03</span>
-																</div>
-															</div>
-														</div>
+														{% endfor %}
 													</div>
+													
 													<div class="large-title-block full-content bg-gray">
 														<div class="row">
 															<div class="col-lg-6 col-md-12 col-sm-12">
@@ -661,6 +636,7 @@
 												data-effect="slide" data-speed="400" data-autoplay="2000" data-loop="1"
 												data-arrows="1" data-dots="1">
 												<div class="swiper-wrapper">
+													{% for project in projects %}
 													<div class="swiper-slide">
 														<article class="eael-grid-post eael-post-grid-column">
 															<div class="eael-grid-post-holder">
@@ -672,30 +648,27 @@
 																				href="projects/vision-city/index.html"></a>
 																		</div>
 																		<div class="eael-entry-thumbnail">
-																			<img src="{% static 'wp-content/uploads/zeranimg/projects/landscape01.jpg' %}"
-																				alt="" />
+																			<img src="{{ project.image.url }}"
+																				alt="{{ project.title }}" />
 																			<a
-																				href="projects/vision-city/index.html"></a>
+																				href="{{ project.url }}"></a>
 																		</div>
 																	</div>
 																	<div class="eael-entry-wrapper">
 																		<header class="eael-entry-header">
 																			<h2 class="eael-entry-title">
 																				<a class="eael-grid-post-link"
-																					href="projects/vision-city/index.html"
-																					title="Vision City">Vision City</a>
+																					href="{{ project.url }}"
+																					title="{{ project.title }}">{{ project.title }}</a>
 																			</h2>
 																		</header>
 																	</div>
 																	<div class="eael-entry-content">
 																		<div class="eael-grid-post-excerpt">
-																			<p>
-																				The beauty of owning land is that
-																				it&#8217;s a tangible...
-																			</p>
+																			<p>{{ project.description }}</p>
 																			<div
 																				class="eael-post-elements-readmore-wrap">
-																				<a href="projects/vision-city/index.html"
+																				<a href="{{ project.url }}"
 																					class="eael-post-elements-readmore-btn">Read
 																					More</a>
 																			</div>
@@ -705,357 +678,7 @@
 															</div>
 														</article>
 													</div>
-													<div class="swiper-slide">
-														<article class="eael-grid-post eael-post-grid-column">
-															<div class="eael-grid-post-holder">
-																<div class="eael-grid-post-holder-inner">
-																	<div class="eael-entry-media eael-entry-medianone">
-																		<div class="eael-entry-overlay fade-in">
-																			<i class="fas fa-long-arrow-alt-right"
-																				aria-hidden="true"></i><a
-																				href="projects/number-31/index.html"></a>
-																		</div>
-																		<div class="eael-entry-thumbnail">
-																			<img src="{% static 'wp-content/uploads/zeranimg/projects/landscape02.jpg' %}"
-																				alt="" />
-																			<a href="projects/number-31/index.html"></a>
-																		</div>
-																	</div>
-																	<div class="eael-entry-wrapper">
-																		<header class="eael-entry-header">
-																			<h2 class="eael-entry-title">
-																				<a class="eael-grid-post-link"
-																					href="projects/number-31/index.html"
-																					title="Number 31">Number 31</a>
-																			</h2>
-																		</header>
-																	</div>
-																	<div class="eael-entry-content">
-																		<div class="eael-grid-post-excerpt">
-																			<p>
-																				Limited Offer! Just 2 Units On Sale.
-																				Uncompromising Quality, Number...
-																			</p>
-																			<div
-																				class="eael-post-elements-readmore-wrap">
-																				<a href="projects/number-31/index.html"
-																					class="eael-post-elements-readmore-btn">Read
-																					More</a>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</article>
-													</div>
-													<div class="swiper-slide">
-														<article class="eael-grid-post eael-post-grid-column">
-															<div class="eael-grid-post-holder">
-																<div class="eael-grid-post-holder-inner">
-																	<div class="eael-entry-media eael-entry-medianone">
-																		<div class="eael-entry-overlay fade-in">
-																			<i class="fas fa-long-arrow-alt-right"
-																				aria-hidden="true"></i><a
-																				href="projects/prime-city-estate/index.html"></a>
-																		</div>
-																		<div class="eael-entry-thumbnail">
-																			<img src="{% static 'wp-content/uploads/zeranimg/projects/landscape03.jpg' %}"
-																				alt="" />
-																			<a
-																				href="projects/prime-city-estate/index.html"></a>
-																		</div>
-																	</div>
-																	<div class="eael-entry-wrapper">
-																		<header class="eael-entry-header">
-																			<h2 class="eael-entry-title">
-																				<a class="eael-grid-post-link"
-																					href="projects/prime-city-estate/index.html"
-																					title="Prime City Estate">Prime City
-																					Estate</a>
-																			</h2>
-																		</header>
-																	</div>
-																	<div class="eael-entry-content">
-																		<div class="eael-grid-post-excerpt">
-																			<p>
-																				Status: Under Construction Location:
-																				Epe, Lagos Type: Land Land: Full...
-																			</p>
-																			<div
-																				class="eael-post-elements-readmore-wrap">
-																				<a href="projects/prime-city-estate/index.html"
-																					class="eael-post-elements-readmore-btn">Read
-																					More</a>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</article>
-													</div>
-													<div class="swiper-slide">
-														<article class="eael-grid-post eael-post-grid-column">
-															<div class="eael-grid-post-holder">
-																<div class="eael-grid-post-holder-inner">
-																	<div class="eael-entry-media eael-entry-medianone">
-																		<div class="eael-entry-overlay fade-in">
-																			<i class="fas fa-long-arrow-alt-right"
-																				aria-hidden="true"></i><a
-																				href="projects/prestige-green-estate-ii/index.html"></a>
-																		</div>
-																		<div class="eael-entry-thumbnail">
-																			<img src="{% static 'wp-content/uploads/zeranimg/projects/landscape04.jpg' %}"
-																				alt="" />
-																			<a
-																				href="projects/prestige-green-estate-ii/index.html"></a>
-																		</div>
-																	</div>
-																	<div class="eael-entry-wrapper">
-																		<header class="eael-entry-header">
-																			<h2 class="eael-entry-title">
-																				<a class="eael-grid-post-link"
-																					href="projects/prestige-green-estate-ii/index.html"
-																					title="Prestige Green Estate II">Prestige
-																					Green Estate II</a>
-																			</h2>
-																		</header>
-																	</div>
-																	<div class="eael-entry-content">
-																		<div class="eael-grid-post-excerpt">
-																			<p>
-																				Status: Under Construction Location: Ise
-																				town lacampagne Tropicana Ibeju Lekki
-																				Type:...
-																			</p>
-																			<div
-																				class="eael-post-elements-readmore-wrap">
-																				<a href="projects/prestige-green-estate-ii/index.html"
-																					class="eael-post-elements-readmore-btn">Read
-																					More</a>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</article>
-													</div>
-													<div class="swiper-slide">
-														<article class="eael-grid-post eael-post-grid-column">
-															<div class="eael-grid-post-holder">
-																<div class="eael-grid-post-holder-inner">
-																	<div class="eael-entry-media eael-entry-medianone">
-																		<div class="eael-entry-overlay fade-in">
-																			<i class="fas fa-long-arrow-alt-right"
-																				aria-hidden="true"></i><a
-																				href="projects/bethel-island/index.html"></a>
-																		</div>
-																		<div class="eael-entry-thumbnail">
-																			<img src="{% static 'wp-content/uploads/zeranimg/projects/landscape05.jpg' %}"
-																				alt="" />
-																			<a
-																				href="projects/bethel-island/index.html"></a>
-																		</div>
-																	</div>
-																	<div class="eael-entry-wrapper">
-																		<header class="eael-entry-header">
-																			<h2 class="eael-entry-title">
-																				<a class="eael-grid-post-link"
-																					href="projects/bethel-island/index.html"
-																					title="Bethel Island">Bethel
-																					Island</a>
-																			</h2>
-																		</header>
-																	</div>
-																	<div class="eael-entry-content">
-																		<div class="eael-grid-post-excerpt">
-																			<p>
-																				Status: Under Construction Location:
-																				Akodo, Lekki Free Trade Zone Type:...
-																			</p>
-																			<div
-																				class="eael-post-elements-readmore-wrap">
-																				<a href="projects/bethel-island/index.html"
-																					class="eael-post-elements-readmore-btn">Read
-																					More</a>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</article>
-													</div>
-													<div class="swiper-slide">
-														<article class="eael-grid-post eael-post-grid-column">
-															<div class="eael-grid-post-holder">
-																<div class="eael-grid-post-holder-inner">
-																	<div class="eael-entry-media eael-entry-medianone">
-																		<div class="eael-entry-overlay fade-in">
-																			<i class="fas fa-long-arrow-alt-right"
-																				aria-hidden="true"></i><a
-																				href="projects/mo-apartments/index.html"></a>
-																		</div>
-																		<div class="eael-entry-thumbnail">
-																			<img src="{% static 'wp-content/uploads/zeranimg/projects/landscape06.jpg' %}"
-																				alt="" />
-																			<a
-																				href="projects/mo-apartments/index.html"></a>
-																		</div>
-																	</div>
-																	<div class="eael-entry-wrapper">
-																		<header class="eael-entry-header">
-																			<h2 class="eael-entry-title">
-																				<a class="eael-grid-post-link"
-																					href="projects/mo-apartments/index.html"
-																					title="Mo Apartments">Mo
-																					Apartments</a>
-																			</h2>
-																		</header>
-																	</div>
-																	<div class="eael-entry-content">
-																		<div class="eael-grid-post-excerpt">
-																			<p>
-																				Mo Apartments is a residential
-																				development nestled amidst top-notch
-																				amenities...
-																			</p>
-																			<div
-																				class="eael-post-elements-readmore-wrap">
-																				<a href="projects/mo-apartments/index.html"
-																					class="eael-post-elements-readmore-btn">Read
-																					More</a>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</article>
-													</div>
-													<div class="swiper-slide">
-														<article class="eael-grid-post eael-post-grid-column">
-															<div class="eael-grid-post-holder">
-																<div class="eael-grid-post-holder-inner">
-																	<div class="eael-entry-media eael-entry-medianone">
-																		<div class="eael-entry-overlay fade-in">
-																			<i class="fas fa-long-arrow-alt-right"
-																				aria-hidden="true"></i><a
-																				href="projects/prestige-green-phase-1/index.html"></a>
-																		</div>
-																		<div class="eael-entry-thumbnail">
-																			<img src="{% static 'wp-content/uploads/zeranimg/projects/landscape07.jpg' %}"
-																				alt="" />
-																			<a
-																				href="projects/prestige-green-phase-1/index.html"></a>
-																		</div>
-																	</div>
-																	<div class="eael-entry-wrapper">
-																		<header class="eael-entry-header">
-																			<h2 class="eael-entry-title">
-																				<a class="eael-grid-post-link"
-																					href="projects/prestige-green-phase-1/index.html"
-																					title="Prestige Green Phase 1">Prestige
-																					Green Phase 1</a>
-																			</h2>
-																		</header>
-																	</div>
-																	<div class="eael-entry-content">
-																		<div class="eael-grid-post-excerpt">
-																			<p>SOLD OUT</p>
-																			<div
-																				class="eael-post-elements-readmore-wrap">
-																				<a href="projects/prestige-green-phase-1/index.html"
-																					class="eael-post-elements-readmore-btn">Read
-																					More</a>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</article>
-													</div>
-													<div class="swiper-slide">
-														<article class="eael-grid-post eael-post-grid-column">
-															<div class="eael-grid-post-holder">
-																<div class="eael-grid-post-holder-inner">
-																	<div class="eael-entry-media eael-entry-medianone">
-																		<div class="eael-entry-overlay fade-in">
-																			<i class="fas fa-long-arrow-alt-right"
-																				aria-hidden="true"></i><a
-																				href="projects/stallion-spring-2/index.html"></a>
-																		</div>
-																		<div class="eael-entry-thumbnail">
-																			<img src="{% static 'wp-content/uploads/zeranimg/projects/landscape08.jpg' %}"
-																				alt="" />
-																			<a
-																				href="projects/stallion-spring-2/index.html"></a>
-																		</div>
-																	</div>
-																	<div class="eael-entry-wrapper">
-																		<header class="eael-entry-header">
-																			<h2 class="eael-entry-title">
-																				<a class="eael-grid-post-link"
-																					href="projects/stallion-spring-2/index.html"
-																					title="Stallion Spring 2">Stallion
-																					Spring 2</a>
-																			</h2>
-																		</header>
-																	</div>
-																	<div class="eael-entry-content">
-																		<div class="eael-grid-post-excerpt">
-																			<p>SOLD OUT</p>
-																			<div
-																				class="eael-post-elements-readmore-wrap">
-																				<a href="projects/stallion-spring-2/index.html"
-																					class="eael-post-elements-readmore-btn">Read
-																					More</a>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</article>
-													</div>
-													<div class="swiper-slide">
-														<article class="eael-grid-post eael-post-grid-column">
-															<div class="eael-grid-post-holder">
-																<div class="eael-grid-post-holder-inner">
-																	<div class="eael-entry-media eael-entry-medianone">
-																		<div class="eael-entry-overlay fade-in">
-																			<i class="fas fa-long-arrow-alt-right"
-																				aria-hidden="true"></i><a
-																				href="projects/prestige-green-estate-phase-ii/index.html"></a>
-																		</div>
-																		<div class="eael-entry-thumbnail">
-																			<img src="{% static 'wp-content/uploads/zeranimg/projects/landscape09.jpg' %}"
-																				alt="" />
-																			<a
-																				href="projects/prestige-green-estate-phase-ii/index.html"></a>
-																		</div>
-																	</div>
-																	<div class="eael-entry-wrapper">
-																		<header class="eael-entry-header">
-																			<h2 class="eael-entry-title">
-																				<a class="eael-grid-post-link"
-																					href="projects/prestige-green-estate-phase-ii/index.html"
-																					title="Prestige Green Estate Phase II">Prestige
-																					Green Estate Phase II</a>
-																			</h2>
-																		</header>
-																	</div>
-																	<div class="eael-entry-content">
-																		<div class="eael-grid-post-excerpt">
-																			<p>SOLD OUT</p>
-																			<div
-																				class="eael-post-elements-readmore-wrap">
-																				<a href="projects/prestige-green-estate-phase-ii/index.html"
-																					class="eael-post-elements-readmore-btn">Read
-																					More</a>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</article>
-													</div>
+													{% endfor %}
 												</div>
 											</div>
 											<div class="clearfix"></div>

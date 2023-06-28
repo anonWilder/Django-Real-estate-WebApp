@@ -1,17 +1,17 @@
 from django.shortcuts import render
 from .models import *
 from .models import BlogPost
+from .models import Project
 #def index(request):
  #   return render(request,'index.html')
-
-
 
 def index(request):
     posts = BlogPost.objects.all()
     video_blogs = VideoBlog.objects.all()
-    context = {'posts': posts, 'video_blogs': video_blogs}
+    number_blocks = NumberBlock.objects.all()
+    projects = Project.objects.all()
+    context = {'posts': posts, 'video_blogs': video_blogs, 'number_blocks': number_blocks, 'projects': projects}
     return render(request, 'index.html', context)
-
 
 
 def about(request):
