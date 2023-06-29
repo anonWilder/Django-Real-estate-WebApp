@@ -65,7 +65,7 @@
 													</p>
 													<div class="text-left">
 														<a href="../grid-4-columns/index.html"
-															class="site-button-link">Our Projects</a>
+															style="color: #ED2B2A;">Our Projects</a>
 													</div>
 												</div>
 											</div>
@@ -103,7 +103,7 @@
 										</div> {% endcomment %}
 										<!-- TITLE END -->
 									</div>
-									<div class="section-content">
+									<!-- <div class="section-content">
 										<div class="row number-block-two-outer">
 											<div class="col-lg-4 col-md-6 col-sm-12 m-b30">
 												<div
@@ -114,9 +114,9 @@
 															and Africa’s real estate industry through our commitment to
 															acquiring valuable properties easily accessible for just
 															anyone.</p>
-														<a href="#" class="site-button-link">Read More</a>
+														<a href="#" class="site-button-link" style="color: #ED2B2A;">Read More</a>
 														<div class="figcaption-number animate-in-to-top-content">
-															<span>01</span>
+															<span style="color: #ED2B2A;">01</span>
 														</div>
 													</div>
 												</div>
@@ -129,15 +129,47 @@
 														<p>With a mission to provide our clients with a worthwhile real
 															estate investment and make property acquisition safe,
 															affordable, and bankable.</p>
-														<a href="#" class="site-button-link">Read More</a>
+														<a href="#" class="site-button-link" style="color: #ED2B2A;">Read More</a>
 														<div class="figcaption-number animate-in-to-top-content">
-															<span>02</span>
+															<span style="color: #ED2B2A;">02</span>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
+									</div> -->
+
+									<div class="section-content" style="display: flex; justify-content: space-between;">
+										<div class="col-lg-4 col-md-6 col-sm-12 m-b30"
+											 style="order: 1;">
+											<div class="number-block-two animate-in-to-top bdr-gray-light bdr-solid bdr-1"
+												 style="position: relative;">
+												<div class="figcaption bg-white p-a30">
+													<h4 class="m-t0">Our Vision</h4>
+													<p>The Zaran-Dream which is to become a leading icon in Nigeria and Africa’s real estate industry through our commitment to acquiring valuable properties easily accessible for just anyone.</p>
+													<a href="#" class="site-button-link.black" style="color: #ED2B2A;">Read More</a>
+													<div class="figcaption-number animate-in-to-top-content">
+														<span style="color: #ED2B2A;">01</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-12 m-b30"
+											 style="order: 2;">
+											<div class="number-block-two animate-in-to-top bdr-gray-light bdr-solid bdr-1"
+												 style="position: relative;">
+												<div class="figcaption bg-white p-a30">
+													<h4 class="m-t0">Our Mission</h4>
+													<p>With a mission to provide our clients with a worthwhile real estate investment and make property acquisition safe, affordable, and bankable.</p>
+													<a href="#" style="color: #ED2B2A;">Read More</a>
+													<div class="figcaption-number animate-in-to-top-content">
+														<span style="color: #ED2B2A;">02</span>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -174,44 +206,22 @@
 										</div>
 										<!-- TITLE END -->
 										<div class="section-content">
-											<div class="row number-block-one-outer justify-content-center">
-												<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
-													<div class="number-block-one animate-in-to-top">
-														<img src="{% static 'wp-content/uploads/about-us/pic1.jpg' %}" alt="img">
-														<div class="figcaption bg-white text-center p-a20">
-															<h4 class="m-a0">Property Development</h4>
-														</div>
-														<div
-															class="figcaption-number text-center sx-text-primary animate-in-to-top-content">
-															<span>01</span>
-														</div>
-													</div>
-												</div>
-												<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
-													<div class="number-block-one animate-in-to-top">
-														<img src="{% static 'wp-content/uploads/about-us/pic2.jpg' %}" alt="img">
-														<div class="figcaption bg-white text-center p-a20">
-															<h4 class="m-a0">Refurbishment</h4>
-														</div>
-														<div
-															class="figcaption-number text-center sx-text-primary animate-in-to-top-content">
-															<span>02</span>
+												<div class="row number-block-one-outer justify-content-center">
+													{% for number_block in number_blocks %}
+													<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+														<div class="number-block-one animate-in-to-top">
+															<img src="{{ number_block.image.url }}" alt="img" />
+															<div class="figcaption bg-white text-center p-a20">
+																<h4 class="m-a0">{{ number_block.title }}</h4>
+															</div>
+															<div class="figcaption-number text-center sx-text-primary animate-in-to-top-content" > 
+																<span style="color: #ED2B2A";>{{ forloop.counter }}</span>
+															</div>
 														</div>
 													</div>
+													{% endfor %}
 												</div>
-												<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
-													<div class="number-block-one animate-in-to-top">
-														<img src="{% static 'wp-content/uploads/about-us/pic3.jpg' %}" alt="img">
-														<div class="figcaption bg-white text-center p-a20">
-															<h4 class="m-a0">General Construction</h4>
-														</div>
-														<div
-															class="figcaption-number text-center sx-text-primary animate-in-to-top-content">
-															<span>03</span>
-														</div>
-													</div>
-												</div>
-											</div>
+
 											<div class="large-title-block full-content bg-gray">
 												<div class="row">
 													<div class="col-lg-6 col-md-12 col-sm-12">
@@ -227,7 +237,7 @@
 																system that cut across service delivery, and customer
 																satisfaction.</p>
 															<div class="text-left">
-																<a href="#" class="site-button-link">Read More</a>
+																<a href="#" class="site-button-link.black" style="color: #ED2B2A;">Read More</a>
 															</div>
 														</div>
 													</div>
@@ -274,7 +284,7 @@
 												<div class="col-lg-4 col-md-6 col-sm-12 m-b30">
 													<div class="sx-icon-box-wraper  icon-count-2-outer">
 														<div class="icon-count-2 bg-white">
-															<span class="icon-count-number">01</span>
+															<span class="icon-count-number" style="color: #ED2B2A;">01</span>
 															<div class="icon-xl inline-icon m-b5 scale-in-center">
 																<span class="icon-cell"><i
 																		class="flaticon-window"></i></span>
@@ -284,8 +294,8 @@
 																<p>We adopt your own goals as our own: Your success is
 																	our success. </p>
 																<div class="text-left">
-																	<a href="../services/partnership/index.html"
-																		class="site-button-link">Read More</a>
+																	{% comment %} <a href="../services/partnership/index.html"
+																		class="site-button-link">Read More</a> {% endcomment %}
 																</div>
 															</div>
 														</div>
@@ -295,7 +305,7 @@
 												<div class="col-lg-4 col-md-6 col-sm-12 m-b30">
 													<div class="sx-icon-box-wraper  icon-count-2-outer">
 														<div class="icon-count-2 bg-white">
-															<span class="icon-count-number">02</span>
+															<span class="icon-count-number" style="color: #ED2B2A;">02</span>
 															<div class="icon-xl inline-icon m-b5 scale-in-center">
 																<span class="icon-cell"><i
 																		class="flaticon-door"></i></span>
@@ -305,8 +315,8 @@
 																<p>We operate with the highest level of honesty,
 																	professionalism and integrity at all times. </p>
 																<div class="text-left">
-																	<a href="../services/integrity/index.html"
-																		class="site-button-link">Read More</a>
+																	{% comment %} <a href="../services/integrity/index.html"
+																		class="site-button-link">Read More</a> {% endcomment %}
 																</div>
 															</div>
 														</div>
@@ -316,7 +326,7 @@
 												<div class="col-lg-4 col-md-6 col-sm-12 m-b30">
 													<div class="sx-icon-box-wraper  icon-count-2-outer">
 														<div class="icon-count-2 bg-white">
-															<span class="icon-count-number">03</span>
+															<span class="icon-count-number" style="color: #ED2B2A;">03</span>
 															<div class="icon-xl inline-icon m-b5 scale-in-center">
 																<span class="icon-cell"><i
 																		class="flaticon-skyline"></i></span>
@@ -326,8 +336,8 @@
 																<p>We strive for excellence and aim to provide the
 																	highest level of service possible. </p>
 																<div class="text-left">
-																	<a href="../services/excellence/index.html"
-																		class="site-button-link">Read More</a>
+																	{% comment %} <a href="../services/excellence/index.html"
+																		class="site-button-link">Read More</a> {% endcomment %}
 																</div>
 															</div>
 														</div>
@@ -346,7 +356,7 @@
 				</div>
 			</div>
 		</section>
-		<section data-particle_enable="false" data-particle-mobile-disabled="false"
+		{% comment %} <section data-particle_enable="false" data-particle-mobile-disabled="false"
 			class="elementor-section elementor-top-section elementor-element elementor-element-d814bf9 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
 			data-id="d814bf9" data-element_type="section"
 			data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;},&quot;background_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;},&quot;background_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;},&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
@@ -457,10 +467,10 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> {% endcomment %}
 
 
-		<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-598b8d2 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementskit-parallax-multi-container" data-id="598b8d2" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+		{% comment %} <section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-598b8d2 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementskit-parallax-multi-container" data-id="598b8d2" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
 			<div class="elementor-container elementor-column-gap-default">
 				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f1e1b0a" data-id="f1e1b0a" data-element_type="column">
 					<div class="elementor-widget-wrap elementor-element-populated">
@@ -550,7 +560,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> {% endcomment %}
 		{% comment %} <section data-particle_enable="false" data-particle-mobile-disabled="false"
 			class="elementor-section elementor-top-section elementor-element elementor-element-1cc4d90 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
 			data-id="1cc4d90" data-element_type="section"

@@ -15,7 +15,9 @@ def index(request):
 
 
 def about(request):
-    return render(request,'about-us.html')
+    number_blocks = NumberBlock.objects.all()
+    context = {'number_blocks': number_blocks}
+    return render(request,'about-us.html', context)
 
 
 def contact(request):
