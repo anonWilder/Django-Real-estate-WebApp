@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import *
 from .models import BlogPost
 from .models import Project
+from .models import Download
 #def index(request):
  #   return render(request,'index.html')
 
@@ -25,7 +26,8 @@ def contact(request):
 
 
 def download(request):
-    return render(request,'downloads.html')
+    downloads = Download.objects.all()
+    return render(request, 'downloads.html', {'downloads': downloads})
 
 
 def schedule_inspection(request):

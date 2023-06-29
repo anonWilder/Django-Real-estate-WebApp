@@ -34,3 +34,12 @@ class Project(models.Model):
 
     def __str__(self):
         return self.title
+
+
+
+class Download(models.Model):
+    name = models.CharField(max_length=255, default='')
+    link = models.URLField(default='')
+
+    def __str__(self):
+        return self.name
