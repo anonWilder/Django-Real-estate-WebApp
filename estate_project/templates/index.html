@@ -929,14 +929,15 @@
 														
 																			<div class="sx-post-text">
 																				<p>
-																					{{ post.content }}
+																					{{ post.description }}
 																				</p>
 																			</div>
 																			<div class="clearfix">
 																				<div class="text-left">
-																					<a href="about-us/index.html"
-																						class="site-button btn-half" style="background-color: #ED2B2A; color: white;"><span style="color: white;">Read
-																							More</span></a>
+																					<a href="{% url 'blog_post' post.id %}" class="site-button btn-half" style="background-color: #ED2B2A; color: white;">
+																						<span style="color: white;">Read More</span>
+																					</a>
+																					
 																				</div>
 																				<div class="widget_social_inks pull-right">
 																					<ul class="social-icons social-md social-square social-dark m-b0">

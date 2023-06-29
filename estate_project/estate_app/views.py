@@ -1,8 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import *
 from .models import BlogPost
 from .models import Project
 from .models import Download
+from .models import BlogPost
 #def index(request):
  #   return render(request,'index.html')
 
@@ -35,3 +36,8 @@ def schedule_inspection(request):
 
 def our_projects(request):
     return render(request,'our-projects.html')
+
+def blog_post(request, post_id):
+    post = get_object_or_404(BlogPost, pk=post_id)
+    context = {'post': post}
+    return render(request, 'blog_post.html', context)

@@ -1,0 +1,128 @@
+{% include 'header.html' %}
+{% load static %}
+
+<div class="page-content">
+    <div class="sx-bnr-inr overlay-wraper bg-parallax bg-top-center" data-stellar-background-ratio="1">
+        <div class="overlay-main bg-black opacity-07"></div>
+        <div class="container">
+            <div class="sx-bnr-inr-entry">
+                <div class="banner-title-outer">
+                    <div class="banner-title-name">
+                        <h2 class="m-tb0">{{post.title}}</h2>
+                    </div>
+                </div>
+                <!-- BREADCRUMB ROW -->
+                <div>
+                    <ul id="breadcrumbs" class="sx-breadcrumb breadcrumb-style-2">
+                        <li class="item-home"><a class="bread-link bread-home" href="https://acerealestates.ng"
+                                title="Home">Home</a></li>
+                        <li class="item-cat"><a href="https://acerealestates.ng/category/news/">Article</a></li>
+                        <li class="item-current item-1709"><span class="bread-current bread-1709"
+                                title="blog-post">{{post.title}}</span></li>
+                    </ul>
+                </div>
+                <!-- BREADCRUMB ROW END -->
+            </div>
+        </div>
+    </div>
+
+    <div class="section-full p-t80  inner-page-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="blog-single-space max-w900 ml-auto mr-auto">
+                        <!-- BLOG START -->
+                        <div class="blog-post blog-detail text-black no_img_detail">
+
+                            <div class="sx-post-meta  m-t20">
+                                <ul>
+                                    <li class="post-date"><span>{{ post.date }}</span> </li>
+                                    <li class="post-author">By <span><a href="{{ post.author }}"
+                                                title="Visit ACE&#8217;s website" rel="author external">{{post.author}}</a></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sx-post-text">
+                                <div data-elementor-type="wp-post" data-elementor-id="1709"
+                                    class="elementor elementor-1709">
+                                    <section data-particle_enable="false" data-particle-mobile-disabled="false"
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-ab13d7f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="ab13d7f" data-element_type="section"
+                                        data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f0a7a56"
+                                                data-id="f0a7a56" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-185ba45 elementor-widget elementor-widget-elementskit-heading"
+                                                        data-id="185ba45" data-element_type="widget"
+                                                        data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}"
+                                                        data-widget_type="elementskit-heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="ekit-wid-con">
+                                                                <div class="ekit-heading elementskit-section-title-wraper text_left   ekit_heading_tablet-   ekit_heading_mobile-">
+                                                                    <!-- <h2
+                                                                        class="ekit-heading--title elementskit-section-title ">
+                                                                        {{ post.title }}</h2> -->
+                                                                    <!-- <div class="ekit_heading_separetor_wraper ekit_heading_elementskit-border-divider">
+                                                                        <div class="elementskit-border-divider"></div>
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section data-particle_enable="false" data-particle-mobile-disabled="false"
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-92f8fef elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="92f8fef" data-element_type="section"
+                                        data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e5d746c"
+                                                data-id="e5d746c" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-27d9bd1 elementor-widget elementor-widget-text-editor"
+                                                        data-id="27d9bd1" data-element_type="widget"
+                                                        data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}"
+                                                        data-widget_type="text-editor.default">
+                                                        <div class="elementor-widget-container">
+                                                            <p><span class="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xzsf02u" dir="auto" style="font-style: italic; font-size: larger;font-weight:bold;">{{ post.description }}</span>
+                                                            </p>
+                                                            <p><span class="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xzsf02u"
+                                                                    dir="auto"><br /> {{ post.content }}</span></p>
+                                                           
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="section-head">
+                            <div class="sx-separator-outer separator-left">
+                                <div class="sx-separator bg-white bg-moving bg-repeat-x">
+                                    <h3 class="sep-line-one">Related Blogs</h3>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SECTION CONTENT END -->
+
+</div>
+
+{% include 'footer.html'%}
