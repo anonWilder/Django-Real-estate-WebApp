@@ -18,7 +18,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['zaranrealestate.up.railway.app', '127.0.0.1']
 
-
+CSRF_TRUSTED_ORIGINS = ['https://*.zaranrealestate.up.railway.app/','https://*.127.0.0.1']
 
 
 # Application definition
