@@ -11,3 +11,6 @@ admin.site.register(VideoBlog)
 admin.site.register(NumberBlock)
 admin.site.register(Project)
 admin.site.register(Download)
+
+
+admin.site.site_header = "Zaran Realty"
